@@ -1,0 +1,32 @@
+.btn {
+  background: unset;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* Add this CSS to your existing styles or create a new CSS file */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* app.css */
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid red;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: rotate 1s linear infinite;
+  margin: 0 auto;
+}
+
