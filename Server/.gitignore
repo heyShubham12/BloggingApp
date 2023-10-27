@@ -1,2 +1,4 @@
 node_modules
 .env
+cd server
+npm start
